@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up as Freelancer - SkillShot</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 5rem auto;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #1DB954;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+        }
+
+        input, select {
+            padding: 0.8rem;
+            margin-bottom: 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #1DB954;
+            color: #121212;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            padding: 1rem;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #1aa34a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up as Freelancer</h1>
+        <form action="freelancer_dashboard.html" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="services">Services Offered</label>
+            <select id="services" name="services">
+                <option value="design">Graphic Design</option>
+                <option value="writing">Content Writing</option>
+                <option value="development">Web Development</option>
+                <option value="other">Other (Specify Below)</option>
+            </select>
+
+            <label for="other">Other Services (if applicable)</label>
+            <input type="text" id="other" name="other" placeholder="Specify other services">
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
